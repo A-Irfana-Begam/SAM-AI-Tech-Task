@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FULL SCREEN DIGITAL PASSWORD RAIN -->
+    <div class="password-rain" aria-hidden="true">
+
+        <div class="rain-column">
+            <span>A</span><span>7</span><span>@</span><span>k</span>
+            <span>2</span><span>#</span><span>M</span><span>9</span>
+            <span>x</span><span>$</span><span>4</span><span>Q</span>
+            <span>!</span><span>p</span><span>6</span><span>R</span>
+        </div>
+
+        <div class="rain-column">
+            <span>8</span><span>b</span><span>%</span><span>R</span>
+            <span>3</span><span>!</span><span>n</span><span>6</span>
+            <span>Z</span><span>&amp;</span><span>1</span><span>p</span>
+            <span>W</span><span>5</span><span>#</span><span>t</span>
+        </div>
+
+        <div class="rain-column">
+            <span>#</span><span>G</span><span>5</span><span>m</span>
+            <span>0</span><span>@</span><span>W</span><span>2</span>
+            <span>c</span><span>!</span><span>7</span><span>H</span>
+            <span>9</span><span>q</span><span>$</span><span>B</span>
+        </div>
+
+        <div class="rain-column">
+            <span>4</span><span>Y</span><span>$</span><span>e</span>
+            <span>9</span><span>&amp;</span><span>J</span><span>1</span>
+            <span>v</span><span>%</span><span>6</span><span>B</span>
+            <span>k</span><span>2</span><span>!</span><span>N</span>
+        </div>
+
+        <div class="rain-column">
+            <span>!</span><span>q</span><span>3</span><span>X</span>
+            <span>8</span><span>#</span><span>f</span><span>0</span>
+            <span>K</span><span>@</span><span>5</span><span>r</span>
+            <span>7</span><span>M</span><span>&amp;</span><span>2</span>
+        </div>
+
+        <div class="rain-column">
+            <span>2</span><span>P</span><span>%</span><span>h</span>
+            <span>7</span><span>$</span><span>C</span><span>4</span>
+            <span>t</span><span>!</span><span>9</span><span>N</span>
+            <span>e</span><span>6</span><span>@</span><span>W</span>
+        </div>
+
+        <div class="rain-column">
+            <span>W</span><span>6</span><span>@</span><span>s</span>
+            <span>1</span><span>&amp;</span><span>D</span><span>8</span>
+            <span>z</span><span>#</span><span>3</span><span>L</span>
+            <span>p</span><span>5</span><span>!</span><span>Y</span>
+        </div>
+
+        <div class="rain-column">
+            <span>5</span><span>u</span><span>!</span><span>E</span>
+            <span>0</span><span>%</span><span>i</span><span>7</span>
+            <span>F</span><span>$</span><span>2</span><span>a</span>
+            <span>R</span><span>9</span><span>#</span><span>m</span>
+        </div>
+
+        <div class="rain-column">
+            <span>9</span><span>H</span><span>&amp;</span><span>3</span>
+            <span>x</span><span>@</span><span>6</span><span>Q</span>
+            <span>!</span><span>1</span><span>v</span><span>$</span>
+            <span>G</span><span>8</span><span>k</span><span>%</span>
+        </div>
+
+        <div class="rain-column">
+            <span>m</span><span>4</span><span>#</span><span>T</span>
+            <span>7</span><span>c</span><span>!</span><span>0</span>
+            <span>Y</span><span>%</span><span>2</span><span>n</span>
+            <span>@</span><span>5</span><span>B</span><span>8</span>
+        </div>
+
+        <div class="rain-column">
+            <span>6</span><span>Z</span><span>$</span><span>p</span>
+            <span>1</span><span>!</span><span>R</span><span>9</span>
+            <span>&amp;</span><span>f</span><span>3</span><span>K</span>
+            <span>0</span><span>W</span><span>#</span><span>h</span>
+        </div>
+
+        <div class="rain-column">
+            <span>@</span><span>2</span><span>V</span><span>8</span>
+            <span>q</span><span>%</span><span>5</span><span>M</span>
+            <span>!</span><span>7</span><span>b</span><span>$</span>
+            <span>4</span><span>X</span><span>9</span><span>e</span>
+        </div>
+
+        <div class="rain-column">
+            <span>3</span><span>n</span><span>!</span><span>G</span>
+            <span>6</span><span>#</span><span>y</span><span>1</span>
+            <span>$</span><span>F</span><span>8</span><span>@</span>
+            <span>t</span><span>4</span><span>Q</span><span>%</span>
+        </div>
+
+        <div class="rain-column">
+            <span>R</span><span>0</span><span>&amp;</span><span>k</span>
+            <span>5</span><span>!</span><span>9</span><span>P</span>
+            <span>2</span><span>z</span><span>%</span><span>7</span>
+            <span>H</span><span>$</span><span>1</span><span>c</span>
+        </div>
+
+        <div class="rain-column">
+            <span>7</span><span>e</span><span>@</span><span>4</span>
+            <span>W</span><span>#</span><span>2</span><span>m</span>
+            <span>8</span><span>!</span><span>D</span><span>6</span>
+            <span>$</span><span>q</span><span>0</span><span>Y</span>
+        </div>
+
+        <div class="rain-column">
+            <span>p</span><span>5</span><span>!</span><span>N</span>
+            <span>3</span><span>&amp;</span><span>8</span><span>x</span>
+            <span>@</span><span>1</span><span>K</span><span>%</span>
+            <span>6</span><span>R</span><span>2</span><span>h</span>
+        </div>
+
+        <div class="rain-column">
+            <span>$</span><span>V</span><span>9</span><span>a</span>
+            <span>4</span><span>!</span><span>m</span><span>7</span>
+            <span>#</span><span>Q</span><span>0</span><span>e</span>
+            <span>2</span><span>&amp;</span><span>F</span><span>5</span>
+        </div>
+
+        <div class="rain-column">
+            <span>1</span><span>c</span><span>%</span><span>8</span>
+            <span>T</span><span>@</span><span>3</span><span>!</span>
+            <span>y</span><span>6</span><span>$</span><span>B</span>
+            <span>9</span><span>k</span><span>#</span><span>4</span>
+        </div>
+
+        <div class="rain-column">
+            <span>H</span><span>2</span><span>!</span><span>u</span>
+            <span>5</span><span>%</span><span>W</span><span>0</span>
+            <span>r</span><span>&amp;</span><span>7</span><span>G</span>
+            <span>3</span><span>@</span><span>p</span><span>9</span>
+        </div>
+
+        <div class="rain-column">
+            <span>4</span><span>#</span><span>z</span><span>6</span>
+            <span>!</span><span>M</span><span>1</span><span>$</span>
+            <span>q</span><span>8</span><span>Y</span><span>2</span>
+            <span>%</span><span>f</span><span>5</span><span>@</span>
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <div class="brand-icon">🔐</div>
+                <div>
+                    <h1>Password Generator</h1>
+                    <p>Secure Password Generator Pro</p>
+                </div>
+            </div>
+
+            <div class="security-badge">
+                🛡 Secure Generation
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <span class="section-label">
+                PASSWORD SECURITY TOOL
+            </span>
+
+            <h2>
+                Generate Strong &amp; Unique Passwords
+            </h2>
+
+            <p>
+                Create secure passwords with customizable
+                length, character types and intelligent
+                duplicate prevention.
+            </p>
+        </section>
+
+        <!-- GENERATOR -->
+        <section class="generator-section">
+            <div class="generator-card">
+
+                <!-- PASSWORD RESULTS -->
+                <div class="password-display-section">
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-label">
+                                GENERATED PASSWORDS
+                            </span>
+
+                            <h3>Your Secure Passwords</h3>
+                        </div>
+
+                        <span class="unique-badge" id="uniqueBadge">
+                            ✓ Unique
+                        </span>
+                    </div>
+
+                    <div
+                        id="passwordResults"
+                        class="password-results"
+                    ></div>
+
+                    <p class="copy-message" id="copyMessage">
+                        Click Generate Secure Passwords
+                        to create passwords.
+                    </p>
+                </div>
+
+                <!-- PASSWORD SETTINGS -->
+                <div class="controls-section">
+                    <span class="section-label">CUSTOMIZE</span>
+
+                    <h3>Password Settings</h3>
+
+                    <!-- LENGTH -->
+                    <div class="length-control">
+                        <div class="control-header">
+                            <label for="passwordLength">
+                                Password Length
+                            </label>
+
+                            <span id="lengthValue">16</span>
+                        </div>
+
+                        <input
+                            type="range"
+                            id="passwordLength"
+                            min="8"
+                            max="64"
+                            value="16"
+                        >
+
+                        <div class="range-labels">
+                            <span>8</span>
+                            <span>64</span>
+                        </div>
+                    </div>
+
+                    <!-- NUMBER OF PASSWORDS -->
+                    <div class="count-control">
+                        <div class="control-header">
+                            <label for="passwordCount">
+                                Number of Passwords
+                            </label>
+
+                            <span id="countValue">5</span>
+                        </div>
+
+                        <input
+                            type="range"
+                            id="passwordCount"
+                            min="1"
+                            max="10"
+                            value="5"
+                        >
+
+                        <div class="range-labels">
+                            <span>1</span>
+                            <span>10</span>
+                        </div>
+                    </div>
+
+                    <!-- CHARACTER OPTIONS -->
+                    <div class="options-grid">
+
+                        <label class="option-card">
+                            <input
+                                type="checkbox"
+                                id="uppercase"
+                                class="custom-checkbox"
+                                checked
+                            >
+
+                            <span class="option-content">
+                                <strong>Uppercase</strong>
+                                <small>A-Z</small>
+                            </span>
+                        </label>
+
+                        <label class="option-card">
+                            <input
+                                type="checkbox"
+                                id="lowercase"
+                                class="custom-checkbox"
+                                checked
+                            >
+
+                            <span class="option-content">
+                                <strong>Lowercase</strong>
+                                <small>a-z</small>
+                            </span>
+                        </label>
+
+                        <label class="option-card">
+                            <input
+                                type="checkbox"
+                                id="numbers"
+                                class="custom-checkbox"
+                                checked
+                            >
+
+                            <span class="option-content">
+                                <strong>Numbers</strong>
+                                <small>0-9</small>
+                            </span>
+                        </label>
+
+                        <label class="option-card">
+                            <input
+                                type="checkbox"
+                                id="symbols"
+                                class="custom-checkbox"
+                                checked
+                            >
+
+                            <span class="option-content">
+                                <strong>Symbols</strong>
+                                <small>! @ # $ %</small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <!-- GENERATE BUTTON -->
+                    <button
+                        type="button"
+                        class="generate-button"
+                        id="generateButton"
+                    >
+                        <span class="generate-icon">✨</span>
+                        Generate Secure Passwords
+                    </button>
+
+                    <!-- SECURITY INFO -->
+                    <div class="security-info">
+                        <div class="security-info-icon">🔒</div>
+
+                        <div>
+                            <strong>Secure &amp; Unique</strong>
+
+                            <p>
+                                Passwords are generated using
+                                cryptographically secure
+                                randomness and checked against
+                                previously issued passwords.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Secure Generation</h3>
+                <p>
+                    Uses cryptographically secure
+                    random generation.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡</div>
+                <h3>Duplicate Protection</h3>
+                <p>
+                    Previously issued passwords
+                    are tracked to prevent reuse.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚙</div>
+                <h3>Customizable</h3>
+                <p>
+                    Choose password length,
+                    character types and quantity.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Multiple Generation</h3>
+                <p>
+                    Generate multiple unique
+                    passwords in one request.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>Password Generator Pro</p>
+            <p>Secure • Unique • Reliable</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

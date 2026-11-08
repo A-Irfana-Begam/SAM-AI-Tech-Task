@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Security Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Caesar Cipher Background -->
+    <div class="cipher-wheel-bg" aria-hidden="true">
+
+        <div class="cipher-wheel outer-wheel">
+            <span style="--angle:0deg">A</span>
+            <span style="--angle:13.846deg">B</span>
+            <span style="--angle:27.692deg">C</span>
+            <span style="--angle:41.538deg">D</span>
+            <span style="--angle:55.384deg">E</span>
+            <span style="--angle:69.230deg">F</span>
+            <span style="--angle:83.076deg">G</span>
+            <span style="--angle:96.922deg">H</span>
+            <span style="--angle:110.768deg">I</span>
+            <span style="--angle:124.614deg">J</span>
+            <span style="--angle:138.460deg">K</span>
+            <span style="--angle:152.306deg">L</span>
+            <span style="--angle:166.152deg">M</span>
+            <span style="--angle:179.998deg">N</span>
+            <span style="--angle:193.844deg">O</span>
+            <span style="--angle:207.690deg">P</span>
+            <span style="--angle:221.536deg">Q</span>
+            <span style="--angle:235.382deg">R</span>
+            <span style="--angle:249.228deg">S</span>
+            <span style="--angle:263.074deg">T</span>
+            <span style="--angle:276.920deg">U</span>
+            <span style="--angle:290.766deg">V</span>
+            <span style="--angle:304.612deg">W</span>
+            <span style="--angle:318.458deg">X</span>
+            <span style="--angle:332.304deg">Y</span>
+            <span style="--angle:346.150deg">Z</span>
+        </div>
+
+        <div class="cipher-wheel inner-wheel">
+            <span style="--angle:0deg">A</span>
+            <span style="--angle:13.846deg">B</span>
+            <span style="--angle:27.692deg">C</span>
+            <span style="--angle:41.538deg">D</span>
+            <span style="--angle:55.384deg">E</span>
+            <span style="--angle:69.230deg">F</span>
+            <span style="--angle:83.076deg">G</span>
+            <span style="--angle:96.922deg">H</span>
+            <span style="--angle:110.768deg">I</span>
+            <span style="--angle:124.614deg">J</span>
+            <span style="--angle:138.460deg">K</span>
+            <span style="--angle:152.306deg">L</span>
+            <span style="--angle:166.152deg">M</span>
+            <span style="--angle:179.998deg">N</span>
+            <span style="--angle:193.844deg">O</span>
+            <span style="--angle:207.690deg">P</span>
+            <span style="--angle:221.536deg">Q</span>
+            <span style="--angle:235.382deg">R</span>
+            <span style="--angle:249.228deg">S</span>
+            <span style="--angle:263.074deg">T</span>
+            <span style="--angle:276.920deg">U</span>
+            <span style="--angle:290.766deg">V</span>
+            <span style="--angle:304.612deg">W</span>
+            <span style="--angle:318.458deg">X</span>
+            <span style="--angle:332.304deg">Y</span>
+            <span style="--angle:346.150deg">Z</span>
+        </div>
+
+        <!-- Fixed Compass -->
+        <div class="compass-center">
+            <div class="compass-needle"></div>
+            <div class="compass-dot"></div>
+        </div>
+
+    </div>
+
+    <header class="header">
+        <div class="logo">CAESAR CIPHER</div>
+        <div class="badge">SECURITY LAB</div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="tag">CRYPTOGRAPHY TOOL</p>
+            <h1>Caesar Cipher<br><span>Security Lab</span></h1>
+            <p class="subtitle">
+                Encrypt, decrypt and analyze messages using the Caesar Cipher.
+            </p>
+        </section>
+
+        <section class="cipher-card">
+
+            <div class="input-section">
+                <label for="message">MESSAGE</label>
+                <textarea
+                    id="message"
+                    placeholder="Enter your message here..."
+                ></textarea>
+
+                <label for="shift">SHIFT VALUE</label>
+                <input
+                    type="number"
+                    id="shift"
+                    value="3"
+                    min="0"
+                    max="25"
+                >
+
+                <div class="buttons">
+                    <button id="encryptBtn" class="primary">Encrypt</button>
+                    <button id="decryptBtn" class="secondary">Decrypt</button>
+                    <button id="clearBtn" class="clear">Clear</button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <label>OUTPUT</label>
+                    <button id="copyBtn">Copy</button>
+                </div>
+
+                <div id="output" class="output-box">
+                    Your result will appear here...
+                </div>
+
+                <div id="status" class="status"></div>
+            </div>
+
+        </section>
+
+        <section class="analysis-card">
+            <div class="section-title">
+                <span>01</span>
+                Character Transformation
+            </div>
+
+            <div id="transformation" class="transformation">
+                <p>Enter a message and encrypt it to see the transformation.</p>
+            </div>
+        </section>
+
+        <section class="brute-card">
+            <div class="section-title">
+                <span>02</span>
+                Brute-Force Analysis
+            </div>
+
+            <p class="description">
+                Caesar Cipher has only 26 possible shifts.
+                This makes it vulnerable to brute-force attacks.
+            </p>
+
+            <button id="bruteBtn" class="primary">
+                Run All 26 Shifts
+            </button>
+
+            <div id="bruteForce" class="brute-grid"></div>
+        </section>
+
+        <section class="security-card">
+            <div class="section-title">
+                <span>03</span>
+                Security Analysis
+            </div>
+
+            <div class="security-grid">
+
+                <div class="security-item">
+                    <h3>Limited Key Space</h3>
+                    <p>
+                        Only 26 possible shifts exist, so attackers
+                        can easily test every possibility.
+                    </p>
+                </div>
+
+                <div class="security-item">
+                    <h3>Frequency Analysis</h3>
+                    <p>
+                        Letter frequency patterns can help attackers
+                        identify the original message.
+                    </p>
+                </div>
+
+                <div class="security-item">
+                    <h3>Not Modern Security</h3>
+                    <p>
+                        Caesar Cipher is useful for learning,
+                        but it should not protect real sensitive data.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Caesar Cipher Security Lab</p>
+        <span>Educational Cryptography Project</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
